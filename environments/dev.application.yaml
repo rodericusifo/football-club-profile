@@ -1,0 +1,25 @@
+apps:
+  name: "mini_project_echo"
+  version: "1.0.0"
+server:
+  port: 9091
+database:
+  postgres:
+    url: "localhost"
+    port: "5432"
+    databaseName: "football_club_profile_db"
+    username: "ifo"
+    password: "@12Maret1999"
+    schema: "public."
+    connectionTimeout: "20s"
+    maxIdleConnection: 5
+    maxOpenConnection: 10
+    debugMode: true
+passwordHashing:
+  saltHash: 14
+jwt:
+  secretKey: "9opAsZp4vy"
+api:
+  footballDataOrg:
+    baseUrl: "https://api.football-data.org"
+    authToken: "112fbbbdea6f4d1f908c8f695e025041"
