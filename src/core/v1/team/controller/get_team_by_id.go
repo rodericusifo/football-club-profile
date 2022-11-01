@@ -21,12 +21,12 @@ func (c *TeamController) GetTeamByID(ctx echo.Context) error {
 		DTO: dto.DTO[*request_controller_team_v1.GetTeamByIDRequestParam, any, any]{
 			Param: reqParam,
 			Query: nil,
-			Body: nil,
+			Body:  nil,
 		},
 	})
 	if err != nil {
 		return err
 	}
 
-	return ctx.JSON(http.StatusOK, response.ResponseSuccess("get list team by area ids success", teamFromApiDto))
+	return ctx.JSON(http.StatusOK, response.ResponseSuccess("get detail team by id success", teamFromApiDto))
 }
