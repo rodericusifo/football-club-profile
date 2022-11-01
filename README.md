@@ -5,10 +5,17 @@
 - Name : RODERICUS IFO KRISTA
 - Stack : Back-End (Golang)
 
+## Set Up
+
+- Copy <dev|stag|prod|test>.application.yaml.example from folder environments to folder environments with name file like dev.application.yaml and fill the empty value with your environment values
+
 ## How to Run
 
-```
-$ make start
+```bash
+$ go mod tidy
+>  Installing Depedencies...
+$ make start-dev
+>  Starting Program With Dev Environment...
 ```
 
 ## App Flow
@@ -19,6 +26,15 @@ $ make start
   - Get List Area
   - Get Team List By Area ID
   - Get Team By ID
+
+## Endpoint Details
+| Endpoint                      |               Method                | Info                      | Remark                                 |
+| ----------------------------- | :---------------------------------: | :------------------------ | :------------------------------------- |
+| /v1/users/register            |               `POST`                | Auth                      | Register User                          |
+| /v1/users/register            |               `POST`                | Auth                      | Login User                             |
+| /v1/areas                     |               `GET`                 | Areas                     | Get List Areas                         |
+| /v1/teams                     |               `GET`                 | Teams                     | Get List Teams                         |
+| /v1/teams/:id                 |               `GET`                 | Teams                     | Get Team Detail                        |
 
 ## Documentation
 
