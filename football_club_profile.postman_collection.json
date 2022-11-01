@@ -180,7 +180,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/v1/areas?page=1&limit=20",
+					"raw": "{{base_url}}/v1/areas",
 					"host": [
 						"{{base_url}}"
 					],
@@ -191,11 +191,13 @@
 					"query": [
 						{
 							"key": "page",
-							"value": "1"
+							"value": "1",
+							"disabled": true
 						},
 						{
 							"key": "limit",
-							"value": "20"
+							"value": "20",
+							"disabled": true
 						}
 					]
 				}
@@ -269,7 +271,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/v1/teams?areas=2032&page=2",
+					"raw": "{{base_url}}/v1/teams",
 					"host": [
 						"{{base_url}}"
 					],
@@ -280,11 +282,18 @@
 					"query": [
 						{
 							"key": "areas",
-							"value": "2032"
+							"value": "2032",
+							"disabled": true
 						},
 						{
 							"key": "page",
-							"value": "2"
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"disabled": true
 						}
 					]
 				}

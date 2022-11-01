@@ -5,6 +5,12 @@
 - Name : RODERICUS IFO KRISTA
 - Stack : Back-End (Golang)
 
+## How to Run
+
+```
+$ make start
+```
+
 ## App Flow
 
 - Register User
@@ -16,7 +22,7 @@
 
 ## Documentation
 
-- Postman File: football_club_profile.postman_collection.json
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/fbab18f85677c9447e6e?action=collection%2Fimport)
 
 ## Depedency
 
