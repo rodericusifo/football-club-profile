@@ -31,7 +31,7 @@ $ make start-dev
 | Endpoint                      |               Method                | Info                      | Remark                                 |
 | ----------------------------- | :---------------------------------: | :------------------------ | :------------------------------------- |
 | /v1/users/register            |               `POST`                | Auth                      | Register User                          |
-| /v1/users/register            |               `POST`                | Auth                      | Login User                             |
+| /v1/users/login               |               `POST`                | Auth                      | Login User                             |
 | /v1/areas                     |               `GET`                 | Areas                     | Get List Areas                         |
 | /v1/teams                     |               `GET`                 | Teams                     | Get List Teams                         |
 | /v1/teams/:id                 |               `GET`                 | Teams                     | Get Team Detail                        |
